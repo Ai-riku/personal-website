@@ -64,12 +64,12 @@ export function HeroHeader() {
 
       <div className={classes.inner}>
         <Title className={classes.title}>
-          Francis Chui
+          Eric Wang
         </Title>
 
         <Container size={640}>
           <Text size="xl" c='dimmed' className={classes.description}>
-            A computer engineer looking to make a big impact in technology
+            Software engineer looking to make a big impact in technology
           </Text>
         </Container>
       </div>
