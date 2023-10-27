@@ -69,21 +69,21 @@ export function AboutMe() {
               {/* <Avatar src={'https://i.gyazo.com/a2ed4b668faf433418dacb5e742a1d29.jpg'} size={160} radius="lg" /> */}
               <div>
                 <Text fw={500} className={classes.description} ta="center" mt="md">
-                  I am a fresh computer engineer dedicated to learning more about
-                  the computer engineering. I graduated from Simon Fraser University and am excited
-                  to make contributions to clients who have need of my skills. Since kindergarden, I've always been
-                  fascinated with computers and working with them. This lead me to spend majority of my life working
-                  with computers and pursue a career with them. Welcome to my personal website!
+                  I am a results-driven and self-demanding software engineer with 2 years of experience in the FinTech industry. 
+                  My expertise lies in developing scalable and robust systems, utilizing my proficiency in C++ and strong command of Python. 
+                  With a track record of achieving tangible results, I prioritize delivering high-quality work and consistently meeting or exceeding goals. 
+                  My experience in the FinTech industry has provided me with valuable insights into the unique challenges and requirements of this sector. 
+                  Overall, I am a dedicated and adaptable software engineer with a focus on delivering exceptional solutions in the FinTech industry or any tech-related field.
                 </Text>
               </div>
           </Group>
           <Group className={classes.social} position='center' noWrap>
-              <a className={classes.a} href="https://github.com/fchui">
+              <a className={classes.a} href="https://github.com/Ai-riku">
                 <ActionIcon variant="filled" size="xl">
                       <IconBrandGithub size="2rem" stroke={1.5}/>
                 </ActionIcon>
               </a>
-            <a className={classes.a} href="https://www.linkedin.com/in/francis-yk-chui/">
+            <a className={classes.a} href="https://www.linkedin.com/in/eric-wang-91a070136/">
               <ActionIcon variant="filled" size="xl">
                   <IconBrandLinkedin size="2rem" stroke={1.5} />
               </ActionIcon>

@@ -4,39 +4,39 @@ import React from 'react'
 
 const traitdata = [
     {
-      title: 'Commitment',
+      title: 'Strong Sense of Integrity',
       description:
-        'There is nothing more satisifying than a job well done. Any task assigned to me I intend to complete in an efficient and extraordinary manner.',
+        'I pride myself in my dedication to upholding ethical standards, being honest, and maintaining a strong moral character. I believe it is crucial to build trust with colleagues, stakeholders and clients.',
       icon: IconHeartHandshake,
     },
     {
-      title: 'Creativity',
+      title: 'Adaptable',
       description:
-        'Through my life I have learned to never get attached to a singular paradigm. I push myself to create my own thinking methods. Hence, my mind often has unique solutions for intriguing problems.',
+        'I am open to change and embrace new technologies. I am willing and eager to learn new programming languages, frameworks, or methodologies to address evolving needs.',
       icon: IconPalette,
     },
     {
-      title: 'Pragmatism',
+      title: 'Detail Oriented',
       description:
-        'I often keep in mind the big picture of a project and my role. If it means letting go of my personal emotions to complete a project, I am willing to do so ensure my clients are happy.',
+        'I am meticulous in my work to ensure my code is efficient, readable, and maintainable. I also consider as many edge cases and potential pitfalls as possible to ensure delivery of robust and error-free software',
       icon: IconPuzzle,
     },
     {
-      title: 'Independence',
+      title: 'Team Player',
       description:
-        'I believe that strong team consists of everyone being able to handle their tasks on their own. An independent person knows how to use dependence to their advantage.',
+        'I work hard to ensure effective communication and collaboration when working in teams. I actively share knowledge, seek feedback, and build strong working relationships to maximize my team\'s success.',
       icon: IconHandGrab,
     },
     {
-      title: 'Leader',
+      title: 'Curious',
       description:
-        'When I am put in situations where I need to lead other people, I mantain a strong vision of the objective and delegate effectively.',
+        'I am driven by curiosity to explore new technologies and learn innovative approaches. I am constantly seeking to discover creative solutions, and adapt to the ever-evolving landscape of technology.',
       icon: IconFlag,
     },
     {
-      title: 'Empathetic',
+      title: 'Continuously improving',
       description:
-        'As an engineer, I believe it is more important for me to listen and understand my clients vision than for me to understand my own vision. After all, a happy client is a happy me!',
+        'I strive to continuously grow and improve my professional skillsets. I am actively seeking opportunities to enhance my skills, expand my knowledge, and refine my craft. ',
       icon: IconEmpathize,
     },
   ];
