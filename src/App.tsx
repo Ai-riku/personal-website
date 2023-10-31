@@ -11,7 +11,7 @@ const App = () => {
   return (
     <>
       <MantineProvider withGlobalStyles withNormalizeCSS>
-        <HeaderSimple links={[{ "link": "/Home", "label": "Home" },{ "link": "/Projects/1", "label": "Projects" }]}></HeaderSimple>
+        <HeaderSimple links={[{ "link": "/Home", "label": "Home" }]}></HeaderSimple>
       </MantineProvider>
       <Routes>
           <Route index element={<Home />} />

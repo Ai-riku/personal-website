@@ -66,7 +66,6 @@ export function AboutMe() {
             About Me
           </Title>
           <Group position='center' noWrap>
-              {/* <Avatar src={'https://i.gyazo.com/a2ed4b668faf433418dacb5e742a1d29.jpg'} size={160} radius="lg" /> */}
               <div>
                 <Text fw={500} className={classes.description} ta="center" mt="md">
                   I am a results-driven and self-demanding software engineer with 2 years of experience in the FinTech industry. 
