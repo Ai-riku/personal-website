@@ -8,6 +8,7 @@ import { useState } from 'react';
 
 import ColorSchemeContext from './ColorSchemeContext';
 
+
 const App = () => {
   const [colorScheme, setColorScheme] = useState('dark');
 
@@ -15,7 +16,7 @@ const App = () => {
     <ColorSchemeContext.Provider value={{ colorScheme, onChange: setColorScheme }}>
       <MantineProvider theme={{ colorScheme }}>
         <>
-          <HeaderSimple links={[{ "link": "/Home", "label": "Home" }]}></HeaderSimple>
+          <HeaderSimple links={[{ "link": "/Home", "label": "Home" }, { "link": "/Projects", "label": "Projects" }]}></HeaderSimple>
           <Routes>
               <Route index element={<Home />} />
               <Route path="Home" element={<Home />} />

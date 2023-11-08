@@ -11,12 +11,14 @@ const useStyles = createStyles((theme) => ({
       justifyContent: 'space-between',
       alignItems: 'center',
       height: '100%',
-      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1]
+      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.gray[1]
     },
 
     Header: {
-      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1],
+      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.gray[1],
       width: '100%',
+      paddingBottom: 0,
+      marginBottom: 0,
     },
 
     links: {
