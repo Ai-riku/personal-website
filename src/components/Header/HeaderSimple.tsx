@@ -82,8 +82,8 @@ export function HeaderSimple({ links }: HeaderSimpleProps) {
           <Group spacing={16} className={classes.links}>
             {items}
           </Group>
-          <DarkMode/>
           <Burger opened={opened} onClick={toggle} className={classes.burger} size="sm" />
+          <DarkMode/>
         </Container>
       </Header>
     );
