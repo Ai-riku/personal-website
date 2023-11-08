@@ -45,6 +45,7 @@ const useStyles = createStyles((theme) => ({
       titleCard: {
         fontSize: rem(34),
         fontWeight: 900,
+        color: theme.colorScheme === 'dark' ? "white" : "black",
     
         [theme.fn.smallerThan('sm')]: {
           fontSize: rem(24),
@@ -85,6 +86,10 @@ const useStyles = createStyles((theme) => ({
           marginRight: 'auto',
         },
       },
+
+      wrapper: {
+        backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1],
+      },
   }));
 
 export function MyValues() {
@@ -102,19 +107,21 @@ export function MyValues() {
     ));
   
     return (
-      <Container size="lg" py="xl">
+      <div className ={classes.wrapper}>
+        <Container size="lg" py="xl">
 
-        <Title order={2} className={classes.titleCard} ta="center" mt="sm">
-          My Values
-        </Title>
-  
-        <Text c="dimmed" className={classes.descriptionCard} ta="center" mt="md">
-        </Text>
-  
-        <SimpleGrid cols={3} spacing="xl" mt={50} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>
-          {features}
-        </SimpleGrid>
-      </Container>
+          <Title order={2} className={classes.titleCard} ta="center" mt="sm">
+            My Values
+          </Title>
+    
+          <Text c="dimmed" className={classes.descriptionCard} ta="center" mt="md">
+          </Text>
+    
+          <SimpleGrid cols={3} spacing="xl" mt={50} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>
+            {features}
+          </SimpleGrid>
+        </Container>
+      </div>
     );
   }
   

@@ -2,6 +2,7 @@ import { createStyles, Container, Header, Group, Burger, rem } from '@mantine/co
 import { NavLink } from 'react-router-dom'
 import { useDisclosure } from '@mantine/hooks';
 import { useState } from 'react'
+import DarkMode from './DarkMode'
 import React from 'react'
 
 const useStyles = createStyles((theme) => ({
@@ -10,8 +11,14 @@ const useStyles = createStyles((theme) => ({
       justifyContent: 'space-between',
       alignItems: 'center',
       height: '100%',
+      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1]
     },
-  
+
+    Header: {
+      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1],
+      width: '100%',
+    },
+
     links: {
       [theme.fn.smallerThan('xs')]: {
         display: 'none',
@@ -41,8 +48,8 @@ const useStyles = createStyles((theme) => ({
   
     linkActive: {
       '&, &:hover': {
-        backgroundColor: theme.fn.variant({ variant: 'light', color: theme.primaryColor }).background,
-        color: theme.fn.variant({ variant: 'light', color: theme.primaryColor }).color,
+        backgroundColor: theme.fn.variant({ variant: theme.colorScheme, color: theme.primaryColor }).background,
+        color: theme.fn.variant({ variant: theme.colorScheme, color: theme.primaryColor }).color,
       },
     },
   }));
@@ -70,11 +77,12 @@ export function HeaderSimple({ links }: HeaderSimpleProps) {
     ));
   
     return (
-      <Header height={60} mb={0}>
+      <Header height={60} mb={0} className={classes.Header}>
         <Container className={classes.header}>
           <Group spacing={16} className={classes.links}>
             {items}
           </Group>
+          <DarkMode/>
           <Burger opened={opened} onClick={toggle} className={classes.burger} size="sm" />
         </Container>
       </Header>

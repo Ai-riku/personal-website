@@ -3,7 +3,7 @@ import React from 'react'
 import { createStyles, Title, Container} from '@mantine/core'
 import { PreviewCarousel, ImageCarousel, ProjectDescription } from '../components/index';
 import { Routes, Route } from 'react-router-dom';
-import { Projects2 } from './';
+import { Projects2 } from '.';
 
 var links = [
     {

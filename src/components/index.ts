@@ -1,4 +1,4 @@
-export * from './HeaderSimple'
+export * from './Header/HeaderSimple'
 
 export * from './Home/AboutMe'
 export * from './Home/MyValues'

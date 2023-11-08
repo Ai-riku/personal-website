@@ -6,6 +6,7 @@ const useStyles = createStyles((theme) => ({
     description: {
       maxWidth: 600,
       margin: 'auto',
+      color: theme.colorScheme === 'dark' ? 'white' : 'black',
     },
 
     titleCard: {
@@ -26,10 +27,12 @@ const useStyles = createStyles((theme) => ({
           marginLeft: 'auto',
           marginRight: 'auto',
         },
+
+        color: theme.colorScheme === 'dark' ? 'white' : 'black',
     },
 
     wrapper: {
-      backgroundColor: '#F5F5F5',
+      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1],
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       paddingTop: `calc(${theme.spacing.xl} * 3)`,
@@ -52,7 +55,7 @@ const useStyles = createStyles((theme) => ({
     a: {
       textDecoration: 'none',
       color: 'white',
-    }
+    },
 
   }));
 
